@@ -1,12 +1,41 @@
-.title{
-  font-family: 'PT Serif', serif;
-}
-.menu{
-  font-family: 'Roboto', sans-serif;
-}
+.wrapper{
+  width: 80%;
+  margin: auto;
+  }
+  .header
+  {
+    display: flex;
+   justify-content: space-between;
+  }
 .logo
 {
+    margin-right: 63%;
+    padding: 40px 0;
    font-family: 'PT Serif', serif;
+   font-size: 24px;
+   line-height: 32px;
+   }
+   .menu{
+  padding: 47px 0;
+  font-family: 'Roboto', sans-serif;
+  }
+   .logo,.menu {
+ display: inline-block;
+ border: dashed 1px red;
+   }
+   .menu__element{
+     padding: 0 13px;
+   }
+   .menu__element:last-child {
+     padding-right: 0;
+   }
+   .main-content {
+  margin-right: 49%; 
+   }
+   .main-content__title {
+   font-size: 66px;
+line-height: 87px;
+font-style: normal;
 }
 p{
    font-family: 'Roboto', sans-serif;
@@ -14,3 +43,4 @@ p{
 button{
    font-family: 'Roboto', sans-serif;
 }
+
