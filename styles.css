@@ -9,11 +9,29 @@
   }
 .logo
 {
-    margin-right: 63%;
+  position: relative;
     padding: 40px 0;
-   font-family: 'PT Serif', serif;
-   font-size: 24px;
-   line-height: 32px;
+    padding-left: 44px;
+   font: bold 24px/31px PT Serif, arial, helvetica, sans-serif;
+   }
+   .logo__circle
+   {
+     position: absolute;
+     left: 0;
+     top: 50%;
+    transform: translateY(-50%);
+     width: 28px;
+     height: 28px;
+     border-radius: 50%;
+     opacity: 0.7;
+   }
+   .logo__circle_color_darc-blue {
+      background: #0056EC;
+   }
+   .logo__circle_color_blue{
+     left: 8px;
+     top: 56%;
+     background: #C8DBFB;
    }
    .menu{
   padding: 47px 0;
@@ -21,7 +39,6 @@
   }
    .logo,.menu {
  display: inline-block;
- border: dashed 1px red;
    }
    .menu__element{
      padding: 0 13px;
