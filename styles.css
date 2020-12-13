@@ -35,19 +35,51 @@
    }
    .menu{
   padding: 47px 0;
-  font-family: 'Roboto', sans-serif;
   }
    .logo,.menu {
  display: inline-block;
    }
    .menu__element{
-     padding: 0 13px;
+  position: relative;
+ margin-right: 26px;
+ font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+ color: #000;
+ text-decoration: none;
+ transition: opacity 0.5s;
    }
    .menu__element:last-child {
-     padding-right: 0;
+     margin-right: 0;
    }
+   .menu__element_active::after {
+  position: absolute;
+  display: block;
+  left: 0;
+ content: '';
+ width: 68px;
+ height: 3px;
+ background: #0056EC;
+   }
+.menu__element:after {
+ position: absolute;
+ left: 0;
+ display: block;
+ content: '';
+ width: 0;
+ top: 0;
+ height: 3px;
+ background: #0056EC;
+}
+.menu__element:hover{
+  opacity: 0.5;
+}
+  .menu__element:hover:after,.menu__element_active:after{
+     opacity: 1;
+     width: 100%;
+    top: 100%;
+     transition: top 1s;
+     }
    .main-content {
-  margin-right: 49%; 
+  margin-right: 49%;
    }
    .main-content__title {
    font-size: 66px;
@@ -60,4 +92,3 @@ p{
 button{
    font-family: 'Roboto', sans-serif;
 }
-
