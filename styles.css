@@ -6,6 +6,7 @@
 .header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .logo {
@@ -81,14 +82,33 @@
   transition: top 1s;
 }
 
-.main-content { margin-right: 49%; }
-
-.main-content__title {
-  font-size: 66px;
-  line-height: 87px;
-  font-style: normal;
+.main-content {
+  padding: 70px 65% 100% 0;
+  background: url(img/mainimg.svg) top right no-repeat;
 }
 
-p { font-family: 'Roboto', sans-serif; }
+.main-content__title {
+  margin: 0 0 40px 0;
+  font: bold 66px/87px PT Serif, arial, helvetica, sans-serif;
+}
 
-button { font-family: 'Roboto', sans-serif; }
+.main-content__description {
+  margin: 0 30% 40px 0;
+  font: 22px/26px Roboto, arial, helvetica, sans-serif;
+}
+
+.main-content__button {
+  display: inline-block;
+  font: 14px/16px Roboto, arial, helvetica, sans-serif;
+  color: #fff;
+  background: #0056ec;
+  padding: 18px 21px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.main-content__button:hover {
+  background: linear-gradient(to bottom, #0056ec, #0ff);
+}
+
+.mail__title-text_highlight { background: #ecf3ff; }
